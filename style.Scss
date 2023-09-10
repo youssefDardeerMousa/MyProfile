@@ -1,0 +1,39 @@
+$whait:#fff;
+$blue:#1b2bc2;
+$brown:#c9c2c2;
+body{
+    background-color: #1e0426;
+}
+
+.navlink{
+    color:$whait;
+    transition: 0.5s;
+    font: {
+        weight: bolder;
+        size: 19px;
+    }
+   
+}
+
+.navlink:hover{
+    color:$blue;
+   
+}
+.introduction{
+    color: $brown;
+    font: {
+        size:19px;
+    };
+}
+#section1,.navbar{
+    display: none;
+}
+.aboutMe,.About .introduction,.skills,.projects,.CV,footer{
+    position: relative;
+    left:-1500px;
+}
+
+footer{
+    background-color: #1b0422;
+
+}

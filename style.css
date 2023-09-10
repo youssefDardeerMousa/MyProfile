@@ -1,0 +1,32 @@
+body {
+  background-color: #1e0426;
+}
+
+.navlink {
+  color: #fff;
+  transition: 0.5s;
+  font-weight: bolder;
+  font-size: 19px;
+}
+
+.navlink:hover {
+  color: #1b2bc2;
+}
+
+.introduction {
+  color: #c9c2c2;
+  font-size: 19px;
+}
+
+#section1, .navbar {
+  display: none;
+}
+
+.aboutMe, .About .introduction, .skills, .projects, .CV, footer {
+  position: relative;
+  left: -1500px;
+}
+
+footer {
+  background-color: #1b0422;
+}/*# sourceMappingURL=style.css.map */
