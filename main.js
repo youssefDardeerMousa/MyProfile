@@ -12,9 +12,7 @@ $(".navbar-toggler").click(() => {
     }
    
 });
-$(".navlink").click(function(){
-    console.log(this);
-})
+
 
 
 
@@ -61,7 +59,18 @@ $(document).ready(function(){
            
         });
     });
+   
+    
 });
 
 
-
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var $target = $(event.target);
+        if (!$target.closest(".navbar").length && !$target.is(".navbar-toggler")) {
+            if ($(".navbar-collapse").hasClass("show")) {
+                $(".navbar-toggler").trigger("click");
+            }
+        }
+    });
+});
